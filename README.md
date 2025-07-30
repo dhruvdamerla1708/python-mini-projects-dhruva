@@ -1,22 +1,55 @@
-# Mini Project 6 – Grocery Billing System
+# 📝 Personal Daily Logger
 
-This Python script allows a customer to generate a detailed grocery bill by:
-- Entering customer details
-- Adding multiple items with quantity and price
-- Automatically calculating total, discounts based on thresholds
-- Displaying a final formatted bill
+A simple diary application in Python that allows users to log their daily thoughts with timestamps, view their past entries, and count total entries.
 
-## Discount Rules
-- ₹2000 and above → 15%
-- ₹1000 to ₹1999 → 10%
-- ₹500 to ₹999 → 5%
-- Below ₹500 → No discount
+---
 
-## How to Run
-Just run the script and follow the input prompts.
+## 🔧 Features
+
+- Add a new diary entry with the current timestamp
+- View all past entries
+- Count the total number of diary entries
+- Stores entries in a local file called `diary.txt`
+
+---
+
+## 💡 How It Works
+
+1. The user selects from a menu:
+   - Add entry
+   - View diary
+   - Count entries
+   - Exit
+2. Entries are stored in `diary.txt` with a timestamp using `datetime.now()`.
+3. Each diary entry is stored on a new line and timestamped for reference.
+
+---
+
+## 📁 File Structure
+
+- `personal_daily_logger.py` - Main script to run the application.
+- `diary.txt` - Auto-generated file to store diary entries.
+
+---
+
+## 🧠 Skills Used
+
+- File handling (`with open`, `read`, `write`, `append`)
+- Exception handling (`try-except`)
+- `datetime` module for timestamps
+- Menu-driven programming
+- Basic string formatting
+
+---
+
+## 🏁 How to Run
 
 ```bash
-python mini_project_6_grocery_billing.py
+python personal_daily_logger.py
 ```
 
-Enjoy your billing automation! 🛒
+---
+
+## 👤 Created by
+
+Dhruva – as part of the Day 18 milestone in the Data Science + AI Roadmap.
