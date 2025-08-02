@@ -1,47 +1,25 @@
-# Student Report Card Generator
+# 🧩 Mini Project 19: Riddle Master
 
-## 🧾 Project Title:
-**Student Report Card Generator** – Python Mini Project
+## 🎯 Objective
+A fun console-based game that randomly picks a riddle, takes user input, and checks the answer.
 
-## 📌 Description:
-This project generates a formatted report card for multiple students based on their subject marks. It dynamically handles any number of students and subjects, calculates total and average marks, assigns grades, and prints a clean report.
+## 🛠️ Features
+- Random riddle from a bank
+- Case-insensitive answer check
+- Feedback for correct/wrong answers
 
-## 🚀 Features:
-- Accepts user input for number of students and subjects  
-- Records each student's name and marks  
-- Calculates **Total Marks** and **Average**  
-- Assigns grades based on average:
-  - `A` (85 and above)  
-  - `B` (70–84)  
-  - `C` (50–69)  
-  - `Fail` (Below 50)  
-- Outputs a well-formatted **Report Card**
+## 🧱 Files
+- `riddles.py`: Contains a list of riddles and answers
+- `play_riddle.py`: Runs the game and handles user input
 
-## 🛠️ Technologies Used:
-- Language: **Python 3**
-- Concepts: Lists, Loops, Conditional Statements, Nested Lists
-
-## 📥 How to Run:
-1. Make sure you have Python installed.  
-2. Open terminal or IDE and run:
-   ```bash
-   python student_report_card_generator.py
-   ```
-3. Enter the number of students and subjects as prompted.  
-4. Enter each student’s marks to generate their report card.
-
-## 🧑‍🎓 Sample Output:
+## 🧪 Example Output
 ```
------- REPORT CARD ------
+🧩 Welcome to Riddle Master! 🧩
+-------------------------------
+🧠 Here's your riddle:
+➡️ What has keys but can't open locks?
 
-Name: Dhruva
-Total: 265
-Average: 88.33
-Grade: A
+Your answer: keyboard
+
+✅ Correct! You're a true Riddle Master!
 ```
-
-## 📁 File:
-- `student_report_card_generator.py` – Main Python script
-
-## ✍️ Author:
-- **Dhruva Damerla**
