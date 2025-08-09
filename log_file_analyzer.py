@@ -50,10 +50,6 @@ def analyze_log_file(filename):
     print(f'⚠️  Warning Entries   : {warning_count}')
     print(f'ℹ️  Info Entries      : {info_count}\n')
 
-    print('Top 5 Most Frequent Words:')
-    for i, (word, freq) in enumerate(top_words, 1):
-        print(f'{i}. {word:<8} → {freq} times')
-
     # Save summary to file
     with open('summary_report.txt', 'w') as f:
         f.write('📁 Log File Analyzer Summary\n')
@@ -65,10 +61,7 @@ def analyze_log_file(filename):
         f.write(f'Error Entries     : {error_count}\n')
         f.write(f'Warning Entries   : {warning_count}\n')
         f.write(f'Info Entries      : {info_count}\n\n')
-        f.write('Top 5 Most Frequent Words:\n')
-        for i, (word, freq) in enumerate(top_words, 1):
-            f.write(f'{i}. {word:<8} → {freq} times\n')
-
+        
     print('\n✅ Summary saved to: summary_report.txt')
 
 # Run the analyzer
