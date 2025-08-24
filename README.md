@@ -1,55 +1,68 @@
-# 📝 Personal Daily Logger
+# Mini Project 27: Number Grid Analyzer
 
-A simple diary application in Python that allows users to log their daily thoughts with timestamps, view their past entries, and count total entries.
-
----
+This Python project uses **NumPy** to analyze and manipulate a user-defined 2D number grid.
 
 ## 🔧 Features
 
-- Add a new diary entry with the current timestamp
-- View all past entries
-- Count the total number of diary entries
-- Stores entries in a local file called `diary.txt`
+- Accepts custom grid dimensions (rows × columns)
+- Takes input numbers from the user
+- Displays the grid using NumPy
+- Provides grid summary:
+  - Total elements
+  - Shape, dimensions, data type
+- Performs statistical analysis:
+  - Sum, mean, min, max
+- Filters even and odd numbers from the grid
+- Displays a reshaped version of the original grid
 
----
+## 🧪 Example Output
 
-## 💡 How It Works
+```
+📊 Welcome to Grid Analyzer 📊
 
-1. The user selects from a menu:
-   - Add entry
-   - View diary
-   - Count entries
-   - Exit
-2. Entries are stored in `diary.txt` with a timestamp using `datetime.now()`.
-3. Each diary entry is stored on a new line and timestamped for reference.
+Enter number of rows: 3
+Enter number of columns: 4
 
----
+Enter 12 numbers separated by space:
+>> 1 2 3 4 5 6 7 8 9 10 11 12
 
-## 📁 File Structure
+📈 Your Grid:
+[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
 
-- `personal_daily_logger.py` - Main script to run the application.
-- `diary.txt` - Auto-generated file to store diary entries.
+🔢 Grid Summary:
+- Total Elements     : 12
+- Grid Shape         : (3, 4)
+- Grid Dimensions    : 2
+- Data Type          : int64
 
----
+📊 Statistical Info:
+- Sum of All Values  : 78
+- Mean Value         : 6.5
+- Minimum Value      : 1
+- Maximum Value      : 12
 
-## 🧠 Skills Used
+🔍 Filtered Views:
+- Even Numbers       : [2 4 6 8 10 12]
+- Odd Numbers        : [1 3 5 7 9 11]
 
-- File handling (`with open`, `read`, `write`, `append`)
-- Exception handling (`try-except`)
-- `datetime` module for timestamps
-- Menu-driven programming
-- Basic string formatting
+🔁 Reshaped Grid (4x3):
+[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]
+```
 
----
+## 📦 Dependencies
+- Python 3.x
+- NumPy
 
-## 🏁 How to Run
-
+Install NumPy with:
 ```bash
-python personal_daily_logger.py
+pip install numpy
 ```
 
 ---
 
-## 👤 Created by
-
-Dhruva – as part of the Day 18 milestone in the Data Science + AI Roadmap.
+Created as part of **Day 31** of the Data Science + AI Roadmap.
